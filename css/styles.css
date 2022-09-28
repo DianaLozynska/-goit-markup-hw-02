@@ -23,6 +23,7 @@ body {
     --logo-color: #000000;
     --team-bg: #F5F4FA;
     --card-bg: #FFFFFF;
+    --hero-btn-hover: #188CE8;
 }
 
 .header{
@@ -88,7 +89,12 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.06em;
+}
 
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--hero-btn-hover) ;
+    
 }
 
 .title {
@@ -103,9 +109,17 @@ body {
     text-align: center;
 }
 
-.disable-title {
-    font-size: 0;
-    line-height: 0;
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .sub-title {
@@ -169,7 +183,6 @@ body {
     background: #F5F4FA;
     color: var(--title-color);
     border-radius: 4px;
-    width: 125px;
     height: 38px;
     font-weight: 500;
     font-size: 16px;
@@ -186,8 +199,6 @@ body {
     cursor: pointer;
 }
 
-
-
 .team-card {
     display:block;
     background-color: var(--card-bg);
@@ -201,4 +212,10 @@ body {
     background-color: var(--card-bg);
     width: 370px;
     border: 1px solid #EEEEEE;
+}
+
+.portfolio-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
